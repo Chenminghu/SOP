@@ -1,5 +1,5 @@
 # Strategy Platform Optimization
-> since this project is business sensitive, I can't show the code and will obscure part of picture I am going to show
+> since this project is business sensitive, I can't show all the logic or code and will obscure part of picture I am going to show
 
 This is a back-end engine which gives client ability to get real time position on open hedges. (this includes various contracts like Forward contract, Tarf, Knock In/Out contract, etc.) It enable clients to simulate the FX(Foreign Exchange) fluctuation VS the open position which helps them control the risk and manage their cash flow.
 
@@ -17,14 +17,20 @@ Four new entities are designed and created in this project
 
 > Upsert/Delete procedure for sop.strategy
  
-The concept is when customer book a strategy (UI interface will pass JSON code to us)  
+ **Few key features in this upsert procedure**
+1.When customer book a strategy (UI interface will pass JSON code to us)  
 SOP.Strategy, SOP.Forecast, SOP.Rolling_Hedgeratio will be filled respectively corresponding to the JSON code
+If there is any error like missing data in JSON code, the procedure will automatically produce the error code and description of error
+2.All three table use auto increase primary key.
+3.There are also four keys for us to determine whether we should update three table or insert a new one.
 
-All three table use auto increase primary key.
-There are also four key for us to determine whether we should update three table or insert a new one.
-
-  
 > Update/Delete procedure for sop.forecast
-
+Forecast table is able to auto rolling
 
 > Update/Delete procedure for sop.Rolling
+Nothing special
+
+> Invoice/Update/Delete procedure for sop.Invoice
+Nothing special
+
+
