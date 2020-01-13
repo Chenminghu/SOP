@@ -1,7 +1,7 @@
 # Strategy Platform Optimization
 > since this project is business sensitive, I can't show all the logic or code and will obscure part of picture I am going to show
 
-This is a back-end engine which gives client ability to get real time position on open hedges. (this includes various contracts like Forward contract, Tarf, Knock In/Out contract, etc.) It enable clients to simulate the FX(Foreign Exchange) fluctuation VS the open position which helps them control the risk and manage their cash flow.
+This is a back-end engine which gives client ability to get real time position on open hedges. (this includes various contracts like Forward contract, Tarf, Knock In/Out contract, etc.) It enables clients to simulate the FX(Foreign Exchange) fluctuation VS the open position which helps them control the risk and manage their cash flow.
 
 ![SOP_ER_diagarm](https://user-images.githubusercontent.com/59182938/71923862-c0c59c00-3142-11ea-9a22-0cb30121f047.png)
 
@@ -35,6 +35,12 @@ Nothing special
 > Invoice/Update/Delete procedure for sop.Invoice
 
 Nothing special
+
+
+All Images are screen shot from mock-up
+The functions we achieved:
+1. Using SSRS report run the procedure we built to visualize clients' real time position on open hedge
+2. There is rate slider. When the clients slide the it, their actual rate will keep changing corresponding to the rate slider rate. It enables clients to simulate the FX(Foreign Exchange) fluctuation VS the open position 
 
 ![sop1](https://user-images.githubusercontent.com/59182938/72283085-e6dfb600-35f2-11ea-914b-9cf08f6f4767.png)
 ![sop](https://user-images.githubusercontent.com/59182938/72283060-d3344f80-35f2-11ea-9aac-164cfbb8024e.png)
