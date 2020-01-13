@@ -13,11 +13,18 @@ Four new entities are designed and created in this project
 - Rolling_HedgeRatio
 - Invoice
 
-Next, after creating all the tables, we need to write Insert/Delete/Update procedure for thoes table
+**Next, after creating all the tables, we need to write Insert/Delete/Update procedure for thoes table**
 
 > Upsert/Delete procedure for sop.strategy
-  The concept is when customer book a strategy (UI interface will pass JSON code to us)  SOP.Strategy, SOP.Forecast, SOP.Rolling_Hedgeratio will be filled respectively corresponding to the JSON code
+ 
+The concept is when customer book a strategy (UI interface will pass JSON code to us)  
+SOP.Strategy, SOP.Forecast, SOP.Rolling_Hedgeratio will be filled respectively corresponding to the JSON code
+
+All three table use auto increase primary key.
+There are also four key for us to determine whether we should update three table or insert a new one.
+
   
 > Update/Delete procedure for sop.forecast
+
 
 > Update/Delete procedure for sop.Rolling
